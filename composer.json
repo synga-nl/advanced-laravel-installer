@@ -1,0 +1,52 @@
+{
+    "name": "synga/advanced-laravel-installer",
+    "description": "Can install a laravel application with preconfigured packages via recipes",
+    "type": "library",
+    "require": {
+        "php": "^7.2.9",
+        "ext-zip": "*",
+        "ext-json": "*",
+        "composer/composer": "^1.10",
+        "guzzlehttp/guzzle": "^6.0",
+        "illuminate/console": "^7.1",
+        "symfony/filesystem": "^4.0|^5.0",
+        "symfony/process": "^4.2|^5.0",
+        "geekdevs/cli-highlighter": "^1.0",
+        "tivie/php-os-detector": "^1.1"
+    },
+    "bin": [
+        "bin/advanced-laravel"
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Synga\\Installer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravel\\Installer\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roy Pouls",
+            "email": "info@synga.nl"
+        }
+    ],
+    "scripts": {
+        "test-coverage": [
+            "vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "test",
+    "packages": {
+        "production": {
+            "mtolhuys\/laravel-schematics": "^0.10.3"
+        },
+        "development": {
+            "spatie\/laravel-query-builder": "^2.8"
+        }
+    },
+    "commands": [
+        "--help"
+    ]
+}
