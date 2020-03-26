@@ -26,8 +26,6 @@ You can run the tests with:
 `composer test`
 
 ## Contributing 
-Since I'm getting some questions about this I want these things to be perfectly clear:
-
 This is a safe haven for contributions, every (positive) contributon matters!
 You are free (and encouraged) to use anything of this package for your own ideas.
 You can always ask for help or email me directly for any questions.
